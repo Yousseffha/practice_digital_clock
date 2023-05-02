@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>digital clock</title>
+    <!-- normalize file -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css file -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="clock-box">
+      <span><span id="H-S-P">0</span><span id="H-F-P">0</span></span>
+      <span>:</span>
+      <span> <span id="M-S-P">0</span><span id="M-F-P">0</span></span>
+      <span>:</span>
+      <span><span id="S-S-P">0</span><span id="S-F-P">0</span></span>
+    </div>
+    <button id="edit">edit</button>
+    <div class="edit-box">
+      <button id="close-edit-box">x</button>
+      <form action="" id="form">
+        <input id="hours" type="number" /><span>:</span>
+        <input id="minutes" type="number" />
+        <button id="submit">submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

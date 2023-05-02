@@ -1,0 +1,101 @@
+/*start global rules*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #bbbbbb;
+}
+
+.hidden {
+    display: none;
+}
+
+/*end global rules*/
+
+/*start clock box*/
+
+.clock-box {
+    background-color: #000;
+    width: 50vh;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 15px;
+    border: 3px solid #ddd;
+    box-shadow: -3px 3px;
+}
+
+.clock-box span {
+    font-size: 50px;
+    color: white;
+}
+
+#edit {
+    margin-top: 35px;
+    padding: 5px 25px;
+    text-transform: capitalize;
+    color: white;
+    background-color: black;
+    border: 2px solid #ddd;
+    border-radius: 7px;
+    box-shadow: -3px 3px #000;
+    cursor: pointer;
+}
+/*start clock box*/
+
+/*start edit box*/
+
+.edit-box {
+    background-color: #000;
+    height: fit-content;
+    width: 35vh;
+    margin-top: 35px;
+    padding: 15px 25px;
+    text-align: center;
+    position: relative;
+}
+
+.edit-box button:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.edit-box form span {
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.edit-box form button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    padding: 5px 25px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-box form input {
+    width: 45px;
+    text-align: center;
+}
+
+/*end edit box*/
